@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">native_app</string>
+    <string name="go_to_login_label">Go to login</string>
+    <string name="login_successful">Successfully logged</string>
+</resources>
