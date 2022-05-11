@@ -10,7 +10,17 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        String storageUrl = System.env.FLUTTER_STORAGE_BASE_URL ?: "https://storage.googleapis.com"
+        repositories {
+            maven {
+                url rootProject.projectDir.path + '/flutter_release'
+            }
+            maven {
+                url "$storageUrl/download.flutter.io"
+            }
+        }
     }
 }
 rootProject.name = "native_app"
 include ':app'
+include ':flutter_release'

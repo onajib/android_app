@@ -1,0 +1,3 @@
+[submodule "flutter_release"]
+	path = flutter_release
+	url = git@github.com:onajib/flutter_release.git
